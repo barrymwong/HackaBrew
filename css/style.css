@@ -1,0 +1,204 @@
+
+/* 
+
+Monospace fonts:
+http://hail2u.net/pub/test/273.html 
+
+*/
+
+html,body,select,input,button { font:12px sans-serif; }
+
+.console-entry,
+p,
+.query,
+#loading,
+a { font-family: 'Anonymous Pro', monospace; }
+
+
+html, body { margin:0; padding:0; }
+
+
+a { color:#0076a3; }
+table, tr, td { border:none; margin:0; padding:0; border-collapse: collapse; }
+.align-right { text-align:right; }
+.fl { float:left; }
+.fr { float:right; }
+.cb { clear:both; }
+.posr { position:relative; }
+.ofh { overflow:hidden; }
+
+table tr > td.align-right { padding-right:10px; }
+
+#app { position:relative; }
+#nav { position:fixed; top:0px; left:0; background-color:#fff; font-size:16px; width:100%; border-bottom:1px solid #666; padding-left:50px; }
+#pages { position:fixed; top:0; left:0; }
+#page-top { display:none; position:fixed; bottom:0; right:0; font-size:72px;}
+.page { display:none; }
+.page.on { display:block; }
+#bg { width:4000px; }
+.bg { width:2000px; height:1000px; float:left; background:url(../images/bg.png) no-repeat 0 0;} /* -moz-transform: scale(0.9); Firefox */
+.bg-item { padding-top:80px; padding-left:70px;}
+.bg0 { background-color:#ccc; }
+.bg1000 { background-color:#111; }
+.bg2000 { background-color:#363636; }
+.bg3000 { background-color:#222; }
+.bg4000 { background-color:#252525; }
+.bg5000 { background-color:#333; }
+.bg6000 { background-color:#444; }
+h1, h2 { font-size:60px; color:#fff; margin:0;}
+
+.console-nav { position:relative; }
+#nav a.on.item { color:#fff; background-color:#444; }
+
+#nav ul, #nav ul > li { margin:0; padding:0; }
+#nav ul > li { list-style-type:none; display:block; margin:10px 0px 10px 20px; float:left; }
+#nav ul .code { font-size:12px; display:block; margin-top:5px; color:#666; }
+#nav ul .code .console-text { text-decoration:underline; }
+#nav ul .code a { display:inline; }
+#nav ul a.item { color:#000; text-decoration: none; font-weight:bold; }
+#nav ul > li:hover a { text-decoration: underline; }
+
+
+body #nav ul a.console-text,
+a.console-text { font-weight:bold; color:#0076A3; }
+
+#loading { display:none; position:fixed; top:0px; left:0px; font-size:40px; color:#000; width:70px; text-align:center; line-height:55px; }
+#loading.on { display:block; }
+
+.logo-large { width:80%; display:inline-block; margin-left:200px; }
+
+.img, .desc, .bottle { float:left; }
+
+
+img.img { margin:0 50px;}
+
+#next, #prev { display:none; position:fixed; bottom:100px; font-size:100px; color:#ccc;}
+#next {right:10px;}
+#prev {left:10px;}
+
+.desc { width:500px; color:#fff; font-size:14px; line-height:22px; margin:50px 0 0 30px; position:relative; }
+.desc p { margin:30px 0; }
+.text { width:550px; height:70px; background:url(../images/beer-type-text.png) no-repeat; }
+.text.porter { background-position:-9px -9px; }
+.text.pale-lager { background-position:-9px -115px; }
+.text.hard-cider { background-position:-9px -221px; }
+.text.red-ale { background-position:-9px -327px; }
+.text.ipa { background-position:-9px -432px; }
+
+.bottle { float:left; }
+.bottle.cover { width:84px; height:300px; margin-left:10px; }
+.bg2000 .desc { margin-top:10px; }
+
+
+
+#console { position:fixed; bottom:0; left:0; width:100%; background-color:#f3f3f3; border-top:1px solid #000; }
+
+#console h1, 
+#console h2  { color:#000; }
+#console-contents { display:none; }
+#console-contents.on { display:block; }
+
+#console .query {  padding:0; margin:0; font-size:18px; width:100%;  }
+#console .query:focus { outline-width: 0; }
+#console-data { max-height:100px; overflow-y:auto; overflow-x:hidden;}
+.console-bar { background-color:#e1e1e1; padding:5px 10px; }
+.hide-toggle { position:absolute; bottom:1px; left:0; width:100%; text-align:right; }
+.hide-toggle a { background-color:#000; color:#ccc; padding:0px 5px; text-decoration: none; }
+.hide-toggle a:hover { background-color:#666; }
+.clear-console { position:absolute; bottom:1px; right:0; background-color:#f3f3f3; padding:5px;}
+
+
+ul#data, 
+ul#data > li { padding:0; margin:0; list-style-type:none;}
+ul#data > li { display:block; border-bottom:1px solid #ccc; padding:3px 0px 3px 10px; }
+
+.console-entry { padding-left:20px; line-height:16px; background:url(../images/arrows.png) no-repeat 0px -1px; }
+.subtext { color:#666; display:block; padding-left:20px; line-height:16px; }
+.subtext.error { color:#ed1c24; font-style: italic; background:url(../images/error.png) no-repeat 0 1px; }
+.subtext.warning { color:#aba000; font-style: italic; background:url(../images/warning.png) no-repeat 0 1px; }
+table.fl { margin-left:20px; }
+
+#form-console { margin:5px 10px; }
+.query { border:none; }
+.query-box { padding:5px; background-color:#fff; border:1px solid #ccc; margin-bottom:5px; }
+.query-box.on { 
+	border:1px solid #000;
+}
+
+
+
+
+@media screen and (max-width: 1030px) {
+  .bg-item { padding-top:140px; }
+  #nav ul > li.clear { clear:both }
+  #nav ul > li { width:200px; }
+}
+
+
+
+
+
+
+
+
+
+
+.frame100 .img {  
+	-moz-animation: slide-left 1s 1;
+	-webkit-animation: slide-left 1s 1;
+	animation: slide-left 1s 1;
+}
+.frame200 .img {  
+	-moz-animation: slide-right 1s 1;
+	-webkit-animation: slide-right 1s 1;
+	animation: slide-right 1s 1;
+}
+
+
+
+
+@-moz-keyframes slide-left {
+	0% { -moz-transform: translate(100%, 0px ); }
+	100% { -moz-transform: translate(0%, 0px ); }
+}
+@-webkit-keyframes slide-left {
+	from { -webkit-transform: translate(100%, 0px ); }
+	99% { -webkit-transform: translate(0%, 0px ); }
+	to {} /* equals `100% {}` Leave it empty to fix the flicker */
+}
+@-o-keyframes slide-left {
+	0% { -webkit-transform: translate(100%, 0px ); }
+	100% { -webkit-transform: translate(0%, 0px ); }
+}
+@-ms-keyframes slide-left {
+	0% { -webkit-transform: translate(100%, 0px ); }
+	100% { -webkit-transform: translate(0%, 0px ); }
+}
+@keyframes slide-left {
+	0% { transform: translate(100%, 0px ); }
+	100% { transform: translate(0%, 0px ); }
+}
+
+
+
+@-moz-keyframes slide-right {
+	0% { -moz-transform: translate(-100%, 0px ); }
+	100% { -moz-transform: translate(0%, 0px ); }
+}
+@-webkit-keyframes slide-right {
+	from { -webkit-transform: translate(-100%, 0px ); }
+	99% { -webkit-transform: translate(0%, 0px ); }
+	to {} /* equals `100% {}` Leave it empty to fix the flicker */
+}
+@-o-keyframes slide-right {
+	0% { -o-transform: translate(-100%, 0px ); }
+	100% { -o-transform: translate(0%, 0px ); }
+}
+@-ms-keyframes slide-right {
+	0% { -ms-transform: translate(-100%, 0px ); }
+	100% { -ms-transform: translate(0%, 0px ); }
+}
+@keyframes slide-right {
+	0% { transform: translate(-100%, 0px ); }
+	100% { transform: translate(0%, 0px ); }
+}
